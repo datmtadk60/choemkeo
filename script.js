@@ -5,8 +5,13 @@ const messages = [
 const heartButton = document.getElementById('heart-button');  // Khởi tạo nút trái tim
 const button = document.getElementById('button');
 const backgroundMusic = document.getElementById("backgroundMusic");
+const Ido = document.getElementById("IDo");
 button.addEventListener("click", () => {
   backgroundMusic.play();
+});
+heartButton.addEventListener("click", () => {
+  backgroundMusic.pause();
+  Ido.play()
 });
 function generateRandomNotifications() {
   const notificationCount = 200;
